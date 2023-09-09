@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-const baseUrl = "http://localhost:3001/api/projects"
-const mediaUrl = "http://localhost:3001/api/upload"
+const baseUrl = "https://portfolio-naz.onrender.com/api/projects"
+const mediaUrl = "https://portfolio-naz.onrender.com/api/upload"
 
 const create = async (newProject, token) => {
     
