@@ -1,6 +1,6 @@
 export default function Meses() {
     return (
-        <div className="w-full flex justify-center">
+        <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0, transition: {duration: '0.25s'}}} className="w-full flex justify-center">
             <div className="w-2/3 flex-col mt-4 justify-center items-center">
                 <h1 className="text-4xl p-6 text-center font-semibold text-white">¡Felices 27 meses amor de mi vida ♥!</h1>
                 <p className="text-xl p-6 mb-12 text-center opacity-80 text-white">
@@ -11,6 +11,6 @@ export default function Meses() {
                     Te amo hasta el infinito y más allá, gracias gracias y gracias, y por cierto, un día menos para vernos, te amo mi amor, felices 27 meses ♥
                 </p>
             </div>
-         </div>
+         </motion.div>
         )
 }
