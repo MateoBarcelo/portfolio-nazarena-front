@@ -3,6 +3,8 @@ import Button from '../Button.jsx'
 import loginService from '../../services/login.js'
 import LoginForm from '../forms/LoginForm.jsx'
 import CreateProjectForm from "../forms/CreateProjectForm.jsx"
+import {motion} from 'framer-motion'
+
 export default function Login() {
 
     const [username, setUsername] = useState('')
