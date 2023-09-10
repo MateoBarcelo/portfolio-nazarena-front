@@ -5,7 +5,7 @@ const config = {
         "Access-Control-Allow-Origin": "*"
     }
 }
-const baseUrl = `${process.env.apiURL}/api/login`
+const baseUrl = `${import.meta.env.apiURL}/api/login`
 
 const login = async credentials => {
     const response = await axios.post(baseUrl, credentials,config)
