@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-const baseUrl = "https://portfolio-naz.onrender.com/api/projects"
-const mediaUrl = "https://portfolio-naz.onrender.com/api/upload"
+const baseUrl = `${process.env.apiURL}/api/projects`
+const mediaUrl = `${process.env.apiURL}/api/upload`
 
 const create = async (newProject, token) => {
     
