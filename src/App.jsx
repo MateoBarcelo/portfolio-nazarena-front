@@ -2,6 +2,9 @@ import './App.css'
 import Header from './components/header/Header.jsx'
 import Footer from './components/Footer.jsx'
 import AnimatedRoutes from './components/AnimatedRoutes'
+import dotenv from 'dotenv'
+dotenv.config()
+
 function App() {
 
   return (
