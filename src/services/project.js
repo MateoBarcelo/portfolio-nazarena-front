@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-const baseUrl = `${process.env.apiURL}/api/projects`
-const mediaUrl = `${process.env.apiURL}/api/upload`
+const baseUrl = `${import.meta.env.apiURL}/api/projects`
+const mediaUrl = `${import.meta.env.apiURL}/api/upload`
 
 const create = async (newProject, token) => {
     
