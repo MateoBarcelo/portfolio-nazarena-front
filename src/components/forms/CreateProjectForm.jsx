@@ -27,7 +27,7 @@ export default function CreateProjectForm({ user }) {
             const newProject = {
                 name: data.projectName,
                 year: data.projectYear,
-                description: data.projectDesc,
+                desc: data.projectDesc,
                 img: imageUrl,
                 category: data.projectCategory,
                 linkto: data.projectLink
@@ -111,7 +111,7 @@ export default function CreateProjectForm({ user }) {
                         </label>
                         <input
                             type="text"
-                            id="projectCat"
+                            id="projectCategory"
                             name="projectCategory"
                             placeholder="Marca, packaging, etc."
                             className='rounded-md border-none'
