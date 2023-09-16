@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from 'react'
 import Button from './Button.jsx'
+import contactService from '../services/contact.js'
 
 export default function ContactForm() {
 
@@ -38,9 +39,17 @@ export default function ContactForm() {
         }
     },[email])
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
+        const data = Object.fromEntries(new FormData(e.target))
 
+        const newEmail = {
+            name: data.name,
+            mail: data.email,
+            text: data.message
+        }
+
+        await contactService.sendMail(newEmail)
     }
     
 
@@ -101,7 +110,7 @@ export default function ContactForm() {
                 </div>
             </div>
             <div className="p-2 w-full">
-                <Button className={'flex mx-auto'} type={'submit'}>Enviar</Button>
+                <Button className={`flex mx-auto ${error ? 'pointer-events-none bg-red-300' : 'pointer-events-auto'}`} type={'submit'}>Enviar</Button>
             </div>
             </div>
         </div>
