@@ -2,15 +2,17 @@ import { useEffect, useState, useRef } from 'react'
 import Button from './Button.jsx'
 import contactService from '../services/contact.js'
 
-export default function ContactForm() {
+export default function ContactForm({onsend}) {
 
     const firstInput = useRef(true)
 
     const [email, setEmail] = useState('')
 
-    const errorMessage = "Por favor ingresa un correo válido"
+    const [error, setError] = useState(true)
 
-    const [error, setError] = useState(false)
+    const [sended, setSended] = useState(false)
+
+    const errorMessage = "Por favor ingresa un correo válido"
 
     const handleOnChange = (e) => {
 
@@ -41,6 +43,8 @@ export default function ContactForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+        
+        
         const data = Object.fromEntries(new FormData(e.target))
 
         const newEmail = {
@@ -50,6 +54,8 @@ export default function ContactForm() {
         }
 
         await contactService.sendMail(newEmail)
+
+        onsend(true)
     }
     
 
@@ -74,6 +80,7 @@ export default function ContactForm() {
                         type="text"
                         id="name"
                         name="name"
+                        placeholder='Juan'
                         className="w-full bg-primary-100 rounded border-secondary-90 focus:border-secondary-300 text-base text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                     </div>
@@ -81,17 +88,18 @@ export default function ContactForm() {
             <div className="p-2 w-1/2">
                 <div className="relative">
                     <label className="leading-7 text-sm text-white">
-                        Correo
+                        Tu correo
                     </label>
                     <input
                         type="email"
                         id="email"
                         name="email"
                         value={email}
+                        placeholder='usuario@gmail.com'
                         onChange={handleOnChange}
                         className="w-full bg-primary-100 rounded border border-secondary-90 focus:border-secondary-300 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
-                    {error && <p className="text-red-600 py-2 text-xs italic">{errorMessage}</p>}
+                    {error && <p className="text-red-800 py-2 text-xs italic">{errorMessage}</p>}
                 </div>
             </div>
             <div className="p-2 w-full">
@@ -100,7 +108,7 @@ export default function ContactForm() {
                     for="message"
                     className="leading-7 text-sm text-white"
                 >
-                    Tú mensaje
+                    Tu mensaje
                 </label>
                 <textarea
                     id="message"
