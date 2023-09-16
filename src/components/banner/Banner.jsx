@@ -5,6 +5,7 @@ import ln from '../../assets/Icons/ln.svg'
 import Description from '../banner/Description.jsx'
 import Button from '../Button.jsx'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 
 export default function Banner () {
@@ -43,8 +44,8 @@ export default function Banner () {
                         <p className='font-semibold text-4xl text-primary-700'>Piezas visuales impactantes</p>
                         <p className='font-normal text-3xl text-primary-700 py-4'>¡Bienvenid@ a mi portfolio!</p>
                         <div className='w-full flex space-x-3 justify-center'>
-                            <Button>Ver proyectos</Button>
-                            <Button>Mis recursos</Button>
+                            <Button><Link to="/proyectos">Ver proyectos</Link></Button>
+                            <Button>Mis servicios</Button>
                         </div>
                 </Description>
                 
@@ -54,7 +55,7 @@ export default function Banner () {
             <div className='absolute text-center mx-auto -mt-14 w-full justify-center z-20'>
                  <p className='z-10 w-full text-xl font-medium text-primary-700 justify-center'>¿Te interesan mis diseños?</p>
                  <div className='flex justify-center mt-3'>
-                     <Button>CONTACTAME</Button>
+                     <Button><Link to="/contacto">CONTACTAME</Link></Button>
                  </div>
              </div>
          
