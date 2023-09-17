@@ -1,4 +1,5 @@
 import ProjectCard from './ProjectCard.jsx'
+import PropTypes from 'prop-types'
 
 export default function ProjectGrid({projects}) {
 
@@ -11,4 +12,8 @@ export default function ProjectGrid({projects}) {
                 {listProjects}
             </div>
     )
+}
+
+ProjectGrid.propTypes = {
+    projects: PropTypes.array.isRequired
 }

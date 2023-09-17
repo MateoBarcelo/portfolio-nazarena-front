@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 export default function InfoCard({title, children, image, color, center}) {
 
     return (
@@ -14,3 +16,11 @@ export default function InfoCard({title, children, image, color, center}) {
       </article>
     )
 } 
+
+InfoCard.propTypes = {
+    title: PropTypes.string,
+    children: PropTypes.string,
+    image: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+    center: PropTypes.bool
+}

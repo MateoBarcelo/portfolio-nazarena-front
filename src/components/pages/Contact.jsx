@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import ContactForm from '../ContactForm.jsx'
 import { useState } from 'react'
 
-export default function Contact() {
+const Contact = () => {
     const [sended, setSended] = useState(false)
 
     return(
@@ -32,3 +32,5 @@ export default function Contact() {
         </motion.div>
     )
 }
+
+export default Contact
