@@ -7,15 +7,15 @@ export default {
     extend: {
       colors: {
         'primary': {
-          100: "#D3FADE",
+          100: "#D0A9E4",
           400: '#4D8360',
-          700: '#2F5946',
-          900: '#213F31'
+          700: '#311A64',
+          900: '#1A1A2E'
         },
         'secondary': {
-          300: '#F2B749',
-          100: '#FFC861',
-          90: '#FBE281'
+          300: '#A0E7E5',
+          100: '#D0A9E4',
+          90: '#D0A9E4'
         }
          
 
@@ -24,7 +24,7 @@ export default {
         'sans': ['Gilroy', 'sans-serif']
       },
       backgroundImage: {
-        'profile-pattern': "url('../src/assets/patronnaz.svg')"
+        'profile-pattern': "url('../src/assets/patronnaz2.svg')"
       }
     },
   },

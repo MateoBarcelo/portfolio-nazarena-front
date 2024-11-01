@@ -81,7 +81,7 @@ export default function ContactForm({onsend}) {
                         id="name"
                         name="name"
                         placeholder='Juan'
-                        className="w-full bg-primary-100 rounded border-secondary-90 focus:border-secondary-300 text-base text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        className="w-full bg-white rounded border-secondary-90 focus:border-secondary-300 text-base text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                     </div>
             </div>
@@ -97,7 +97,7 @@ export default function ContactForm({onsend}) {
                         value={email}
                         placeholder='usuario@gmail.com'
                         onChange={handleOnChange}
-                        className="w-full bg-primary-100 rounded border border-secondary-90 focus:border-secondary-300 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        className="w-full bg-white rounded border border-secondary-90 focus:border-secondary-300 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                     {error && <p className="text-red-800 py-2 text-xs italic">{errorMessage}</p>}
                 </div>
@@ -113,7 +113,7 @@ export default function ContactForm({onsend}) {
                 <textarea
                     id="message"
                     name="message"
-                    className="w-full bg-primary-100 rounded border border-secondary-90 focus:border-secondary-300 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-white rounded border border-secondary-90 focus:border-secondary-300 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                 ></textarea>
                 </div>
             </div>

@@ -2222,7 +2222,7 @@ input:checked + .toggle-bg {
 
 .border-secondary-90 {
   --tw-border-opacity: 1;
-  border-color: rgb(251 226 129 / var(--tw-border-opacity));
+  border-color: rgb(208 169 228 / var(--tw-border-opacity));
 }
 
 .border-teal-300 {
@@ -2411,22 +2411,17 @@ input:checked + .toggle-bg {
 
 .bg-primary-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(211 250 222 / var(--tw-bg-opacity));
-}
-
-.bg-primary-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(77 131 96 / var(--tw-bg-opacity));
+  background-color: rgb(208 169 228 / var(--tw-bg-opacity));
 }
 
 .bg-primary-700 {
   --tw-bg-opacity: 1;
-  background-color: rgb(47 89 70 / var(--tw-bg-opacity));
+  background-color: rgb(49 26 100 / var(--tw-bg-opacity));
 }
 
 .bg-primary-900 {
   --tw-bg-opacity: 1;
-  background-color: rgb(33 63 49 / var(--tw-bg-opacity));
+  background-color: rgb(26 26 46 / var(--tw-bg-opacity));
 }
 
 .bg-purple-100 {
@@ -2481,7 +2476,7 @@ input:checked + .toggle-bg {
 
 .bg-secondary-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(242 183 73 / var(--tw-bg-opacity));
+  background-color: rgb(160 231 229 / var(--tw-bg-opacity));
 }
 
 .bg-teal-100 {
@@ -2535,14 +2530,6 @@ input:checked + .toggle-bg {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-opacity-0 {
-  --tw-bg-opacity: 0;
-}
-
-.bg-opacity-70 {
-  --tw-bg-opacity: 0.7;
-}
-
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -2552,7 +2539,7 @@ input:checked + .toggle-bg {
 }
 
 .bg-profile-pattern {
-  background-image: url('../src/assets/patronnaz.svg');
+  background-image: url('../src/assets/patronnaz2.svg');
 }
 
 .from-cyan-400 {
@@ -3108,11 +3095,6 @@ input:checked + .toggle-bg {
   letter-spacing: 0.025em;
 }
 
-.text-amber-200 {
-  --tw-text-opacity: 1;
-  color: rgb(253 230 138 / var(--tw-text-opacity));
-}
-
 .text-cyan-300 {
   --tw-text-opacity: 1;
   color: rgb(103 232 249 / var(--tw-text-opacity));
@@ -3275,12 +3257,12 @@ input:checked + .toggle-bg {
 
 .text-primary-700 {
   --tw-text-opacity: 1;
-  color: rgb(47 89 70 / var(--tw-text-opacity));
+  color: rgb(49 26 100 / var(--tw-text-opacity));
 }
 
 .text-primary-900 {
   --tw-text-opacity: 1;
-  color: rgb(33 63 49 / var(--tw-text-opacity));
+  color: rgb(26 26 46 / var(--tw-text-opacity));
 }
 
 .text-purple-500 {
@@ -3321,6 +3303,11 @@ input:checked + .toggle-bg {
 .text-red-900 {
   --tw-text-opacity: 1;
   color: rgb(119 29 29 / var(--tw-text-opacity));
+}
+
+.text-secondary-100 {
+  --tw-text-opacity: 1;
+  color: rgb(208 169 228 / var(--tw-text-opacity));
 }
 
 .text-teal-500 {
@@ -3371,26 +3358,6 @@ input:checked + .toggle-bg {
 .text-yellow-900 {
   --tw-text-opacity: 1;
   color: rgb(99 49 18 / var(--tw-text-opacity));
-}
-
-.text-secondary-90 {
-  --tw-text-opacity: 1;
-  color: rgb(251 226 129 / var(--tw-text-opacity));
-}
-
-.text-secondary-100 {
-  --tw-text-opacity: 1;
-  color: rgb(255 200 97 / var(--tw-text-opacity));
-}
-
-.text-red-400 {
-  --tw-text-opacity: 1;
-  color: rgb(249 128 128 / var(--tw-text-opacity));
-}
-
-.text-red-950 {
-  --tw-text-opacity: 1;
-  color: rgb(69 10 10 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3704,6 +3671,10 @@ input:checked + .toggle-bg {
   animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.\[background-image\:url\(\"https\:\/\/cdn\.discordapp\.com\/attachments\/1079813884187258922\/1301727873819742310\/Arcana_Posteos_1080_x_1350_px\.jpg\?ex\=6725880e\&is\=6724368e\&hm\=98eedfa5abae257cf5a9e8f099799f308f2d8cdccd9d89acd9d86733e7eac381\&\"\)\] {
+  background-image: url("https://cdn.discordapp.com/attachments/1079813884187258922/1301727873819742310/Arcana_Posteos_1080_x_1350_px.jpg?ex=6725880e&is=6724368e&hm=98eedfa5abae257cf5a9e8f099799f308f2d8cdccd9d89acd9d86733e7eac381&");
+}
+
 .fade-left {
   opacity: 0;
   animation: fadeLeft ease 1.2s;
@@ -3807,7 +3778,7 @@ input:checked + .toggle-bg {
 .before\:border-primary-700::before {
   content: var(--tw-content);
   --tw-border-opacity: 1;
-  border-color: rgb(47 89 70 / var(--tw-border-opacity));
+  border-color: rgb(49 26 100 / var(--tw-border-opacity));
 }
 
 .before\:transition::before {
@@ -3966,7 +3937,7 @@ input:checked + .toggle-bg {
 
 .hover\:bg-secondary-100:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 200 97 / var(--tw-bg-opacity));
+  background-color: rgb(208 169 228 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-teal-200:hover {
@@ -4055,7 +4026,7 @@ input:checked + .toggle-bg {
 
 .focus\:border-secondary-300:focus {
   --tw-border-opacity: 1;
-  border-color: rgb(242 183 73 / var(--tw-border-opacity));
+  border-color: rgb(160 231 229 / var(--tw-border-opacity));
 }
 
 .focus\:border-yellow-500:focus {

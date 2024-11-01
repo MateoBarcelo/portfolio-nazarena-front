@@ -16,7 +16,7 @@ export default function Footer() {
                     </div>
                     <div className='flex md:flex-row flex-col md:space-x-12 md:space-y-0 space-y-12 py-4 items-center md:items-start'>
                         <FloatCard image="contact.svg">+54 9 11 6611-7207</FloatCard> 
-                        <FloatCard image="mail.svg"><a href="nazarena.diaz@hotmail.com" target="__blank">nazarena.diaz@hotmail.com</a></FloatCard>
+                        <FloatCard image="mail.svg"><a href="nazarena.diaz@hotmail.com" target="__blank">nazarena.diaz@hotmail</a></FloatCard>
                     </div>
                 </div>
                 <p className='text-white text-lg pt-8 text-center opacity-50'>© 2023 - Todos los derechos reservados</p>
