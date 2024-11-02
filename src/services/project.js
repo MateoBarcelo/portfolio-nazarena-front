@@ -26,7 +26,7 @@ const uploadImage = async (formData, token) => {
 }
 
 const getAll = async () => {
-    const response = await fetch("../src/mockups/projects.json")
+    const response = await fetch("../src/assets/projects.json")
 
     const data = await response.json()
 
