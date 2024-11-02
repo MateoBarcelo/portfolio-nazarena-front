@@ -17,8 +17,6 @@ export default {
           100: '#D0A9E4',
           90: '#D0A9E4'
         }
-         
-
       },
       fontFamily: {
         'sans': ['Gilroy', 'sans-serif']

@@ -25,10 +25,12 @@ const uploadImage = async (formData, token) => {
     return response.data
 }
 
-const getAll = () => {
-    const response = axios.get(baseUrl)
+const getAll = async () => {
+    const response = await fetch("../src/mockups/projects.json")
 
-    return response.then(response => response.data)
+    const data = await response.json()
+
+    return data.projects
 }
 
 export default {create, getAll, uploadImage}

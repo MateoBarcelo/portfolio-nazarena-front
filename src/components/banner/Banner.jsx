@@ -35,7 +35,7 @@ export default function Banner () {
                         <p className='font-normal text-3xl text-primary-700'>Diseñadora gráfica profesional</p>
                         <span className='justify-center scale-125 md:scale-100 md:justify-start flex space-x-5 py-4 md:py-2'>
                             <a href="https://www.behance.net/nazarenadz" target='__blank'><img src={be}></img></a>
-                            <a href="https://www.instagram.com/designpolux/" target='__blank'><img src={ig}></img></a>
+                            <a href="https://www.instagram.com/arcanadigital" target='__blank'><img src={ig}></img></a>
                             <a href='https://www.linkedin.com/in/nazarenadiaz/' target='__blank'><img src={ln}></img></a>
                         </span>
                     </Description>) : 
@@ -45,7 +45,6 @@ export default function Banner () {
                         <p className='font-normal text-3xl text-primary-700'>¡Bienvenidos a mi universo creativo!</p>
                         <div className='w-full flex space-x-3 justify-center md:justify-start py-2'>
                             <Button><Link to="/proyectos">Ver proyectos</Link></Button>
-                            <Button>Mis servicios</Button>
                         </div>
                 </Description>
                 

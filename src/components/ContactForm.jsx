@@ -50,7 +50,7 @@ export default function ContactForm({onsend}) {
         const newEmail = {
             name: data.name,
             mail: data.email,
-            text: data.message
+            message: data.message
         }
 
         await contactService.sendMail(newEmail)

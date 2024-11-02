@@ -2,12 +2,11 @@ import arrow from '../../assets/Icons/arrowup.svg'
 import projectService from '../../services/project.js'
 
 export default function ProjectCard({ project }) {
-    console.log(project.img)
     return(
         <article className="relative rounded shadow-lg bg-white z-10 w-[280px] h-[280px] overflow-hidden">
             <a href={project.linkto}><img src={`${project.img}`} className="w-full bg-cover h-auto flex"></img></a>
             <img src={arrow} className="z-10 absolute top-2/3 right-1/2 flex justify-center animate-bounce"></img>
-            <section className="h-[70px] z-20 hover:h-full transition-all overflow-hidden bg-white text-primary-900 backdrop-blur-lg w-full absolute bottom-0 left-0 p-2">               
+            <section className="h-[70px] z-20 hover:h-full transition-all overflow-hidden bg-primary-100 text-primary-900 backdrop-blur-lg w-full absolute bottom-0 left-0 p-2">               
                 <div className="px-1 flex justify-between">
                     <p>{project.category}</p>
                     <p>{project.year}</p>
