@@ -1,0 +1,85 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "Constelación",
+      "description": "Ideal para emprendedores que están comenzando.",
+      "image": "https://i.ibb.co/CsPL3C8z/Screenshot-96.png",
+      "items": [
+        {
+          "name": "8 posteos al mes (gráficos + copywriting)"
+        },
+        {
+          "name": "2 Reels con edición sencilla"
+        },
+        {
+          "name": "8 historias al mes (gráficos + copywriting)"
+        },
+        {
+          "name": "Diseño inicial de destacadas, estética y logo incluido (si el cliente aún no lo tiene)"
+        },
+        {
+          "name": "El valor del primer mes tiene un ajuste adicional por configuración inicial de $15.000"
+        }
+      ],
+      "price": "50.000"
+    },
+    {
+      "id": 2,
+      "name": "Galaxia",
+      "description": "Perfecto para potenciar tu presencia digital.",
+      "image": "https://i.ibb.co/4R0Xtnmt/Screenshot-97.png",
+      "items": [
+        {
+          "name": "10 posteos al mes (gráficos + copywriting)"
+        },
+        {
+          "name": "2 Reels con subtitulos + transiciones"
+        },
+        {
+          "name": "12 historias al mes (gráficos + copywriting)"
+        },
+        {
+          "name": "Revisión y planificación mensual de estrategias"
+        },
+        {
+          "name": "Diseño inicial de destacadas, estética y logo incluido (si el cliente aún no lo tiene)"
+        },
+        {
+          "name": "El valor del primer mes tiene un ajuste adicional por configuración inicial de $15.000"
+        }
+      ],
+      "price": "70.000"
+    },
+    {
+      "id": 2,
+      "name": "Universo",
+      "description": "La mejor solución integral para tu marca.",
+      "image": "https://i.ibb.co/sdq9Cvsh/Screenshot-99.png",
+      "items": [
+        {
+          "name": "10 posteos al mes (gráficos + copywriting)"
+        },
+        {
+          "name": "5 Reels con subtitulos + transiciones"
+        },
+        {
+          "name": "12 historias al mes (gráficos + copywriting)"
+        },
+        {
+          "name": "Manejo de cuentas adicionales: TikTok (5 Reels) y Threads (publicaciones constantes)"
+        },
+        {
+          "name": "Calendario de contenido"
+        },
+        {
+          "name": "Diseño inicial de destacadas, estética y logo incluido (si el cliente aún no lo tiene)"
+        },
+        {
+          "name": "El valor del primer mes tiene un ajuste adicional por configuración inicial de $15.000"
+        }
+      ],
+      "price": "90.000"
+    }
+  ]
+}
