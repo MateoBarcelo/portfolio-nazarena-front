@@ -8,7 +8,7 @@ export default function ServiceGrid({ services }) {
 
   return (
     <div
-      className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-4 p-8 items-start`}
+      className={`grid w-full h-full bg-primary-50 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-4 p-16 items-start`}
     >
       {listServices}
     </div>

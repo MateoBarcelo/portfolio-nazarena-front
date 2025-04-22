@@ -1,48 +1,44 @@
 import Button from "../Button";
-
+import { useNavigate } from "react-router";
 /* eslint-disable react/prop-types */
 export default function ServiceCard({ service }) {
-  const getWhatsAppLink = () => {
-    const message = encodeURIComponent(
-      `Hola, tengo interés en el pack de diseño: ${service.name}. ¿Podrías darme más información?`
-    );
-    return `https://wa.me/5492604362433?text=${message}`;
-  };
+  let navigate = useNavigate();
+
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md transition-all hover:shadow-lg flex flex-col items-start">
-      {/* <div className="h-32 w-full">
+    <div className="rounded-lg overflow-hidden max-w-sm transition-all flex flex-col items-start">
+      <div className="h-auto aspect-video w-full">
         <img
           src={service.image}
           alt={service.name}
           className="object-cover w-full h-full"
         />
-      </div> */}
-      <div className="bg-primary-100 h-3 w-full"></div>
-      <div className="p-6 flex flex-col flex-1">
+      </div>
+      <div className="p-6 px-0 flex flex-col w-full">
         <h3 className="text-xl font-semibold text-gray-900 mb-2">
           {service.name}
         </h3>
-        <div className="mb-4">
-          <p className="text-gray-700 mb-4 max-h-full">{service.description}</p>
-          <ul className="text-gray-600 space-y-2 mb-4">
-            {service.items.map((item, index) => {
-              return <li key={index}>• {item.name}</li>;
-            })}
-          </ul>
-        </div>
-        <div className="mt-auto">
-          <div className="flex text-2xl gap-2 mb-4">
-            <p className="font-semibold text-primary-700">Desde</p>
-            <p className="font-bold text-primary-700">${service.price}</p>
+        <p className="text-gray-700 mb-4 h-10">{service.description}</p>
+
+        <div className="">
+          <div className="flex text-2xl gap-2 mb-2">
+            <p className="font-medium text-primary-900 text-xl">Desde</p>
+            <p className="font-semibold text-primary-900 text-xl">
+              ${service.price}
+            </p>
           </div>
+        </div>
+        <div className="w-full justify-center items-center">
           <Button
-            className="w-full bg-[#075e54] hover:bg-[#128c7e] text-white"
-            onClick={() => getWhatsAppLink()}
+            className="w-full bg-secondary-300 hover:bg-secondary-100"
+            onClick={() => {
+              return navigate(`/tienda/${service.name.toLocaleLowerCase()}`);
+            }}
           >
-            Consultar por WhatsApp
+            Ver detalles
           </Button>
         </div>
       </div>
     </div>
   );
 }
+// bg-[#075e54] hover:bg-[#128c7e]
