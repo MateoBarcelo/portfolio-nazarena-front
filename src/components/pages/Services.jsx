@@ -13,12 +13,12 @@ export default function Services() {
       animate={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 0.25 } }}
     >
-      <div className="text-center text-white flex flex-col justify-center items-center">
+      <div className="text-center h-64 text-white flex flex-col justify-center items-center">
         <p className="text-4xl font-semibold mt-16">Packs de diseño</p>
-        <p className="text-lg md:text-xl py-6 opacity-75 max-w-4xl">
+        <p className="text-lg md:text-xl py-6 opacity-75 max-w-3xl p-4 md:px-0">
           Soluciones de diseño completas para emprendedores y pequeñas empresas.
-          Cada pack está cuidadosamente creado para ayudarte a destacar en el
-          mercado.
+          <br></br>Cada pack está cuidadosamente creado para ayudarte a destacar
+          en el mercado.
         </p>
       </div>
       <ServiceGrid services={services}></ServiceGrid>
