@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "Constelación",
+      "type": "Pack redes sociales",
       "description": "Ideal para emprendedores que están comenzando.",
       "image": "https://i.ibb.co/CsPL3C8z/Screenshot-96.png",
       "items": [
@@ -27,8 +28,9 @@
     {
       "id": 2,
       "name": "Galaxia",
+      "type": "Pack redes sociales",
       "description": "Perfecto para potenciar tu presencia digital.",
-      "image": "https://i.ibb.co/4R0Xtnmt/Screenshot-97.png",
+      "image": "https://i.ibb.co/XrWCvryM/Screenshot-100.png",
       "items": [
         {
           "name": "10 posteos al mes (gráficos + copywriting)"
@@ -54,6 +56,7 @@
     {
       "id": 2,
       "name": "Universo",
+      "type": "Pack redes sociales",
       "description": "La mejor solución integral para tu marca.",
       "image": "https://i.ibb.co/sdq9Cvsh/Screenshot-99.png",
       "items": [
