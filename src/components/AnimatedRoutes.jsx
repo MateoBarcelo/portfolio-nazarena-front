@@ -6,6 +6,7 @@ import Login from "./pages/Login.jsx";
 import Services from "./pages/Services.jsx";
 
 import { AnimatePresence } from "framer-motion";
+import ServiceDetail from "./pages/ServiceDetail.jsx";
 
 export default function AnimatedRoutes() {
   const location = useLocation();
@@ -17,6 +18,7 @@ export default function AnimatedRoutes() {
         <Route path="/contacto" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/tienda" element={<Services />} />
+        <Route path="/tienda/:packName" element={<ServiceDetail />} />
       </Routes>
     </AnimatePresence>
   );
